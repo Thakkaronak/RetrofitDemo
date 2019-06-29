@@ -1,0 +1,10 @@
+package com.mind.myretrofitdemoproject
+
+import retrofit2.Call
+import retrofit2.http.GET
+
+interface ApiInterface {
+
+    @GET("users")
+    fun getData(): Call<DataModel>
+}
